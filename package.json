@@ -1,5 +1,5 @@
 {
-  "name": "html-webpack-plugin",
+  "name": "@microcode/html-webpack-plugin",
   "version": "4.0.0-beta.8",
   "license": "MIT",
   "description": "Simplifies creation of HTML files to serve your webpack bundles",

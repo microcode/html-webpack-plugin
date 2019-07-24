@@ -554,7 +554,7 @@ class HtmlWebpackPlugin {
      * fallback to a realtive path
      */
     const webpackPublicPath = compilation.mainTemplate.getPublicPath({ hash: compilationHash });
-    const isPublicPathDefined = webpackPublicPath.trim() !== '';
+    const isPublicPathDefined = typeof compilation.options.output.publicPath !== 'undefined';
     let publicPath = isPublicPathDefined
       // If a hard coded public path exists use it
       ? webpackPublicPath
